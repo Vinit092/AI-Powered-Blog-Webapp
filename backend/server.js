@@ -5,6 +5,7 @@ import connectDB from './configs/db.js';
 import adminRouter from './routes/admin.routes.js';
 import blogRouter from './routes/blog.routes.js';
 
+
 const app=express();
 
 // middlewares
