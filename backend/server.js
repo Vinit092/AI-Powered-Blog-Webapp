@@ -19,7 +19,7 @@ app.get('/',(req,res)=>res.send('server is working'));
 app.use('/api/admin',adminRouter);
 app.use('/api/blog',blogRouter)
 
-app.listen(PORT,()=>{
+app.listen(PORT,async()=>{
     console.log(`server is running at ${PORT}`);
-    connectDB();
+    await connectDB();
 });
